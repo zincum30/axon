@@ -1,0 +1,24 @@
+server:
+  port: 9090
+
+spring:
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/query
+    username: postgres
+    password: 1234
+    driverClassName: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+      database: postgresql
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+      open-in-view: false
+      generate-ddl: true
+
+axon:
+  serializer:
+    general: xstream
+  axonserver:
+    servers: localhost:8124
