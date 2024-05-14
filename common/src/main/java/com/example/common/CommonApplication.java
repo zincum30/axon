@@ -1,15 +1,11 @@
-package com.example.query;
+package com.example.common;
 
-import org.axonframework.eventhandling.EventHandler;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class QueryApplication {
-
+public class CommonApplication {
     public static void main(String[] args) {
-        SpringApplication.run(QueryApplication.class, args);
+        SpringApplication.run(CommonApplication.class, args);
     }
-
-
 }

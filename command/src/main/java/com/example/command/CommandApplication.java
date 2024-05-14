@@ -13,6 +13,4 @@ public class CommandApplication {
         SpringApplication.run(CommandApplication.class,args);
     }
 
-    @CommandHandler
-    protected void test(Object o) {}
 }
